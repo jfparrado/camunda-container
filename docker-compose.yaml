@@ -278,6 +278,7 @@ services:
       - keycloak-theme:/opt/bitnami/keycloak/themes/identity
     ports:
       - "18080:8080"
+      - "18443:8443"
     environment:
       KEYCLOAK_HTTP_RELATIVE_PATH: /auth
       KEYCLOAK_DATABASE_HOST: postgres
